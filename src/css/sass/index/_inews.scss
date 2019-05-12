@@ -1,0 +1,94 @@
+.in-item{
+    display: block;
+    border: 1px solid $bc1;
+    border-left: none;
+    height: 272px;
+    padding: 40px 50px 0 40px;
+    font-size: 16px;
+    .nowti{
+        font-size: 20px;
+        font-weight: bold;
+        color: $fc1;
+        @include mt3;
+    }
+    .tx{
+        height: 24px * 2;
+        margin-top: 12px - 7px;
+    }
+    .more{
+        line-height: 0;
+        margin-top: 53px - 5px;
+    }
+    .date{
+        margin-bottom: 25px - 12px;
+    }
+    @media screen and (min-width:1025px) {
+        &:hover{
+            .nowti{
+                color: $mc2;
+            }
+            .btn-arrow{
+                width: 95px;
+                &:before{
+                    background: $mc1;
+                }
+                &:after{
+                    color: $mc1;
+                }
+            }
+        }
+    }
+    @media screen and (max-width:1700px) {
+        padding-right: 40px;
+    }
+    @media screen and (max-width:1366px) {
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+    @media screen and (max-width:1024px) {
+        margin-left: 20px;
+        border: none;
+        background: $hc3;
+    }
+    @media screen and (max-width:601px) {
+        padding-left: 5%;
+        padding-right: 5%;
+    }
+}
+
+.ix-news-list{
+    overflow: visible;
+    border-left: 1px solid $bc1;
+    .slick-dots{
+        top: 100%;
+        margin-top: 70px;
+        li{
+            border: 1px solid $hc1;
+            background: none;
+            @media screen and (min-width:1025px) {
+                &:hover{
+                    background: $mc1;
+                    border-color: $mc1;
+                }
+            }
+        }
+        .slick-active{
+            background: $mc1;
+            border-color: $mc1;
+        }
+    }
+    @media screen and (max-width:1024px) {
+        border-left: none;
+        margin-left: -20px;
+        .slick-dots{
+            position: static;
+            padding-left: 20px;
+            margin-top: 50px;
+        }
+    }
+    @media screen and (max-width:601px) {
+        .slick-dots{
+            margin-top: (50 / 600) * 100vw;
+        }
+    }
+}

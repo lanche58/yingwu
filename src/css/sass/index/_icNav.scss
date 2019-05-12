@@ -1,0 +1,60 @@
+.ic-nav{
+    margin-left: -15px;
+    li{
+        width: 14.28%;
+        float: left;
+        margin-bottom: 15px;
+        > a{
+            display: block;
+            margin-left: 15px;
+            padding: 0 5px;
+            height: 46px;
+            background: $white;
+            color: $fc3;
+            line-height: 46px;
+            font-size: 16px;
+            text-align: center;
+            &.act{
+                background: $mc1;
+                color: $white;
+            }
+            @media screen and (min-width:1025px) {
+                &:hover{
+                    background: $mc1;
+                    color: $white;
+                }
+            }
+        }
+    }
+    @media screen and (max-width:1366px) {
+        margin-left: -5px;
+        li{
+            margin-bottom: 5px;
+            > a{
+                margin-left: 5px;
+            }
+        }
+    }
+    @media screen and (max-width:1024px) {
+        li{
+            width: 20%;
+            > a{
+                font-size: 14px;
+            }
+        }
+    }
+    @media screen and (max-width:601px) {
+        li{
+            width: 25%;
+        }
+    }
+    @media screen and (max-width:481px) {
+        margin-left: -1px;
+        li{
+            margin-bottom: 1px;
+            > a{
+                margin-left: 1px;
+            }
+        }
+    }
+}

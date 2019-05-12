@@ -1,0 +1,47 @@
+.ix-charac-list{
+    line-height: 1.2;
+    font-size: 16px;
+    li{
+        width: 25%;
+        text-align: center;
+        @media screen and (min-width:1025px) {
+            &:hover{
+                .tx1, .icon{
+                    color: $mc3;
+                }
+            }
+        }
+    }
+    .icon{
+        margin-bottom: 21px - 8px;
+        line-height: 1;
+        font-size: 50px;
+        color: $black;
+        @include mt3;
+    }
+    .tx1{
+        color: $fc1;
+        font-size: 20px;
+        @include mt3;
+    }
+    @media screen and (max-width:861px) {
+        li{
+            width: 50%;
+            margin-bottom: 50px;
+        }
+    }
+    @media screen and (max-width:601px) {
+        li{
+            margin-bottom: (50 / 600) * 100%;
+        }
+    }
+    @media screen and (max-width:481px) {
+        font-size: 14px;
+        .tx1{
+            font-size: 16px;
+        }
+        .icon{
+            font-size: 40px;
+        }
+    }
+}

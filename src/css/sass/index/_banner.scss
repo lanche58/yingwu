@@ -1,0 +1,209 @@
+.banner{
+    .pic2{
+        position: absolute;
+        top: 0;
+        left: 0;
+    }
+    .slick-arrow{
+        width: auto;
+        background: none;
+        line-height: 40px;
+        font-size: 36px;
+        color: $white;
+        @media screen and (min-width:1025px) {
+            &:hover{
+                color: $mc3;
+            }
+        }
+    }
+    .slick-prev{
+        left: 35px;
+    }
+    .slick-next{
+        right: 35px;
+    }
+    .slick-dots{
+        display: none !important;
+        li{
+            background: $white;
+        }
+        .slick-active{
+            background: $mc3;
+        }
+    }
+    .txts{
+        position: absolute;
+        right: 0;
+        top: 90px;
+        width: (1020 / 1920) * 100%;
+        padding-top: (260 / 1920) * 100%;
+        color: $white;
+    }
+    .ti{
+        width: 900px;
+        max-width: 90%;
+        font-size: 50px;
+        font-weight: bold;
+    }
+    .more{
+        margin-top: 70px;
+    }
+    @media screen and (max-width:1600px) {
+        .ti{
+            width: 740px;
+            font-size: 40px;
+        }
+        .more{
+            margin-top: 60px;
+        }
+        .txts{
+            padding-top: 10%;
+        }
+    }
+    @media screen and (max-width:1366px) {
+        .ti{
+            width: 580px;
+            font-size: 32px;
+        }
+        .more{
+            margin-top: 50px;
+        }
+        .txts{
+            padding-top: 9%;
+        }
+        .btn-more{
+            width: 200px;
+            height: 48px;
+            line-height: 46px;
+            font-size: 14px;
+            .btn-arrow{
+                width: 40px;
+                height: 6px;
+                margin: 0 0 (46px - 6px) / 2 20px;
+                &:after{
+                    border-left-width: 6px;
+                    border-right-width: 6px;
+                    border-bottom-width: 6px;
+                }
+            }
+        }
+    }
+    @media screen and (max-width:1024px) {
+        .pic2{
+            position: relative;
+        }
+        .slick-arrow{
+            display: none !important;
+        }
+        .slick-dots{
+            display: block !important;
+        }
+        .txts{
+            width: 100%;
+            padding: 0 5%;
+            top: 50%;
+            transform: translateY(-50%);
+        }
+        .ti{
+            max-width: 100%;
+        }
+    }
+    @media screen and (max-width:861px) {
+        .ti{
+            font-size: 26px;
+            width: 480px;
+        }
+        .btn-more{
+            width: 120px;
+            height: 40px;
+            line-height: 38px;
+            font-size: 12px;
+            .btn-arrow{
+                display: none;
+            }
+        }
+        .more{
+            margin-top: 40px;
+        }
+    }
+    @media screen and (max-width:601px) {
+        .ti{
+            font-size: 22px;
+            width: 400px;
+        }
+        .more{
+            margin-top: (40 / 600) * 100vw;
+        }
+    }
+    @media screen and (max-width:481px) {
+        .ti{
+            font-size: 20px;
+            width: 400px;
+        }
+        .btn-more{
+            width: auto;
+            height: auto;
+            border: none;
+            line-height: 16px;
+            .btn-arrow{
+                display: inline-block;
+                width: 32px;
+                height: 4px;
+                margin: 0 0 (16px - 4px) / 2 15px;
+                &:after{
+                    border-left-width: 4px;
+                    border-right-width: 4px;
+                    border-bottom-width: 4px;
+                }
+            }
+        }
+        .more{
+            line-height: 1;
+        }
+    }
+}
+
+.banner-box{
+    .banner-count{
+        position: absolute;
+        right: 0;
+        bottom: 0;
+        z-index: 199;
+        @media screen and (max-width:1024px) {
+            display: none;
+        }
+    }
+}
+
+.banner-count{
+    width: 320px;
+    height: 100px;
+    background: $mc3;
+    color: $white;
+    line-height: 100px;
+    text-align: center;
+    font-size: 16px;
+    .cnum{
+        font-size: 40px;
+    }
+    @media screen and (max-width:1366px) {
+        width: 256px;
+        height: 80px;
+        line-height: 80px;
+        .cnum{
+            font-size: 32px;
+        }
+    }
+}
+
+.slick-arrow{
+    font-family: "iconfont" !important;
+}
+
+.slick-prev:before{
+    content: "\e660";
+}
+
+.slick-next:before{
+    content: "\e65f";
+}
