@@ -1,0 +1,149 @@
+.ab-arrow{
+    .slick-arrow{
+        top: auto;
+        bottom: 0;
+        margin-top: 0;
+        width: 100px;
+        height: 80px;
+        background: $mc3;
+        line-height: 80px;
+        color: $white;
+        font-size: 28px;
+        text-align: center;
+        @media screen and (min-width:1025px) {
+            &:hover{
+                background: $mc1;
+            }
+        }
+    }
+    .slick-prev{
+        left: auto;
+        right: 100px;
+        &:before{
+            content: "\e726";
+        }
+    }
+    .slick-next{
+        &:before{
+            content: "\e727";
+        }
+        &:after{
+            @include ba;
+            left: 0;
+            top: 50%;
+            margin-top: -6px;
+            height: 12px;
+            width: 1px;
+            background: $white;
+        }
+    }
+}
+
+.ab-list{
+    .pai{
+        padding-bottom: (606 / 1320) * 100%;
+    }
+    .txts{
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        padding: 50px 60px 0;
+        width: 500px;
+        min-height: 345px;
+        background: $white;
+    }
+    .item{
+        padding-bottom: 235px - 20px;
+    }
+    .freeTx{
+        font-size: 16px;
+        margin-top: 25px - 12px;
+    }
+    .ab-line{
+        margin-top: 70px;
+    }
+    .slick-arrow{
+        bottom: 235px - 20px;
+    }
+    @media screen and (max-width:1366px) {
+        .freeTx{
+            font-size: 14px;
+        }
+        .ab-line{
+            margin-top: 50px;
+        }
+        .txts{
+            width: 400px;
+            min-height: 275px;
+            padding: 40px 40px 0;
+        }
+        .item{
+            padding-bottom: 235px - 20px - 70px;
+        }
+        .slick-arrow{
+            bottom: 235px - 20px - 70px;
+        }
+    }
+    @media screen and (max-width:861px) {
+        background: $hc3;
+        padding-bottom: 50px;
+        .item{
+            padding-bottom: 0;
+        }
+        .txts{
+            position: static;
+            background: none;
+            padding-left: 5%;
+            padding-right: 5%;
+            min-height: 0;
+        }
+        .slick-arrow{
+            right: auto;
+            bottom: auto;
+            top: 0;
+            left: 0;
+            width: 80px;
+            height: 64px;
+            line-height: 64px;
+            background: $mco1;
+        }
+        .slick-next{
+            left: 80px;
+        }
+    }
+    @media screen and (max-width:641px) {
+        .slick-arrow{
+            width: 64px;
+            height: 52px;
+            font-size: 22px;
+            line-height: 52px;
+        }
+        .slick-next{
+            left: 64px;
+        }
+    }
+    @media screen and (max-width:601px) {
+        padding-bottom: (50 / 600) * 100vw;
+        .txts{
+            padding-top: (40 / 600) * 100vw;
+        }
+        .ab-line{
+            margin-top: (50 / 600) * 100vw;
+        }
+        .freeTx{
+            margin-top: (13 / 600) * 100vw;
+        }
+    }
+    @media screen and (max-width:481px) {
+        .slick-arrow{
+            width: 52px;
+            height: 42px;
+            line-height: 42px;
+            font-size: 18px;
+        }
+        .slick-next{
+            left: 52px;
+        }
+    }
+}
+

@@ -1,0 +1,59 @@
+@@include('./top.html')
+</head>
+<body>
+@@include('./header.html',{
+    "about": "act"
+})
+@@include('./pbanner.html',{
+    "img": "about_banner.jpg",
+    "ch": "做广告，选择我们没有错",
+    "en": "About us"
+})
+<div class="container">
+    <p class="move-en about-en tbc ff-3">SYMANSBON</p>
+    <div class="ab1 pw">
+        <div class="txts">
+            <h3 class="ix-ti">解决您的需求，<span class="spe">我们很专业！</span></h3>
+            <div class="freeTx">
+                <p>为了满足不同客户日益细分与精准的要求，我们引进世界顶级德国海德堡新型电脑控制高速四色印刷机、专业屏幕软打样校色系统、全套电脑制版设备、瑞士玛天尼胶装机、海德堡折页机、锁线机等先进硬件设备，并成立了工艺研发团队和精品手工组，为高水准的产品和服务提供了保障。</p>
+                <br>
+                <p>赛门仕愽主要业务有：画册，手提袋，名片，信封，便签，联单，纸杯，笔记本，台历挂历，工作证，pvc卡，ID卡，芯片卡、文化墙、海报，背胶，KT板，喷绘，pvc，X展架，易拉宝等服务。</p>
+            </div>
+            <span class="ab-line"></span>
+        </div>
+    </div>
+    <!-- ab1 -->
+    <div class="ab2 pw3">
+        <div class="ab-list ab-arrow u-slick">
+            <div class="item">
+                <div class="pai"><img src="img/ab_i1.jpg" alt=""></div>
+                <div class="txts">
+                    <h3 class="ix-ti"><span class="spe">先进的设备</span></h3>
+                    <div class="freeTx">先进的生产设备是精美产品的基础保障，公司不断引进更新先进的生产设备，加速设备更新改造,使我们的产品品质始终保持领先。</div>
+                    <span class="ab-line"></span>
+                </div>
+            </div>
+            <div class="item">
+                <div class="pai"><img src="img/ab_i1.jpg" alt=""></div>
+                <div class="txts">
+                    <h3 class="ix-ti"><span class="spe">先进的设备</span></h3>
+                    <div class="freeTx">先进的生产设备是精美产品的基础保障，公司不断引进更新先进的生产设备，加速设备更新改造,使我们的产品品质始终保持领先。</div>
+                    <span class="ab-line"></span>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- ab2 -->
+</div>
+<!-- container -->
+@@include('./footer.html')
+<script src="js/plugin.js"></script>
+<script src="js/page.js"></script>
+<script>
+    $(function(){
+        $('.ab-list').slick();
+    })
+</script>
+</script>
+</body>
+</html>

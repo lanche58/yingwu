@@ -1,0 +1,71 @@
+.contact-list{
+    width: 580px;
+    margin: 0 auto;
+    max-width: 100%;
+    li{
+        display: table;
+        table-layout: fixed;
+        width: 100%;
+        border: 1px solid $bc1;
+        padding: 20px 50px;
+        @include mt3;
+        + li{
+            margin-top: 30px;
+        }
+        @media screen and (min-width:1025px) {
+            &:hover{
+                background: $hc3;
+            }
+        }
+    }
+    .b, .name{
+        display: table-cell;
+        vertical-align: middle;
+    }
+    .name{
+        width: 140px;
+        font-size: 20px;
+        font-weight: bold;
+        line-height: 24px;
+        .icon{
+            @include di;
+            width: 35px;
+            color: $hc1;
+            font-size: 22px;
+        }
+    }
+    .b{
+        font-size: 16px;
+    }
+    a{
+        @media screen and (min-width:1025px) {
+            &:not(.na):hover{
+                color: $mc1;
+            }
+        }
+    }
+    @media screen and (max-width:641px) {
+        li{
+            padding-left: 5%;
+            padding-right: 5%;
+        }
+    }
+    @media screen and (max-width:601px) {
+        li{
+            + li{ margin-top: 5vw; }
+        }
+    }
+    @media screen and (max-width:481px) {
+        .b{
+            font-size: 14px;
+        }
+        .name{
+            font-size: 16px;
+            width: 110px;
+            .icon{
+                font-size: 18px;
+                width: 28px;
+            }
+        }
+    }
+}

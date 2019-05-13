@@ -1,0 +1,158 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>赛门仕博印务</title>
+<link href="favicon.ico" rel="shortcut icon" type="image/x-icon">
+<meta name="format-detection" content="telephone=no">
+<meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<meta name="HandheldFriendly" content="true">
+<meta name="msapplication-navbutton-color" content="#4285f4">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<link href="css/iconfont.css" rel="stylesheet" type="text/css">
+<link href="css/style.css" rel="stylesheet" type="text/css">
+<script src="js/jquery.min.js"></script>
+</head>
+<body>
+<div class="header clearfix">
+    <a href="index.html" class="logo-wrap">
+        <div class="logo">
+            <img src="images/logo.png" class="img1">
+            <img src="images/logo1.png" class="img2">
+        </div>
+        <h1 class="name">赛门仕博印务</h1>
+    </a>
+    <ul class="nav">
+        <li><a href="index.html">首页</a></li>
+        <li><a href="about.html">关于我们</a></li>
+        <li><a href="pro.html">产品中心</a></li>
+        <li><a href="case.html">成功案例</a></li>
+        <li><a href="news.html">新闻中心</a></li>
+        <li><a href="contact.html" class="act">联系我们</a></li>
+    </ul>
+</div>
+
+<div class="menu-handler">
+    <span class="burger burger-1 mtrans"></span>
+    <span class="burger burger-2 mtrans"></span>
+    <span class="burger burger-3 mtrans"></span>
+</div>
+<div class="menuBox">
+    <dl class="navMobile">
+        <dd><a href="index.html">首页</a></dd>
+        <dd><a href="about.html">关于我们</a></dd>
+        <dd><a href="pro.html">产品中心</a></dd>
+        <dd><a href="case.html">成功案例</a></dd>
+        <dd><a href="news.html">新闻中心</a></dd>
+        <dd><a href="contact.html">联系我们</a></dd>
+    </dl>
+    <br><br><br><br>
+</div>
+
+<div class="menuBlack"></div>
+<div class="mtop"></div>
+
+<div class="container">
+    <p class="move-en tbc ff-3">SYMANSBON</p>
+    <div id="map"></div>
+    <div class="cta1 pw">
+        <h2 class="ix-ti tac"><span class="spe">联系我们</span></h2>
+        <ul class="contact-list">
+            <li>
+                <p class="name"><i class="icon iconfont icon-dizhi"></i>地址</p>
+                <div class="b">
+                    <p><a href="#">办公室：成都市天府五街美年广场A座746号</a></p>
+                    <p><a href="#">厂址：犀浦百草路555号</a></p>
+                </div>
+            </li>
+            <li>
+                <p class="name"><i class="icon iconfont icon-dianhua"></i>联系方式</p>
+                <div class="b">
+                    <p><a href="tel:18981839299" class="na">手机号：18981839299</a></p>
+                    <p><a href="tel:02885222114" class="na">座机号：028-85222114转808</a></p>
+                </div>
+            </li>
+            <li>
+                <p class="name"><i class="icon iconfont icon-QQ"></i>QQ</p>
+                <div class="b">
+                    <p><a href="#">2162971719</a></p>
+                    <p><a href="#">3258287530</a></p>
+                </div>
+            </li>
+        </ul>
+    </div>
+    
+</div>
+
+<div class="footer">
+    <div class="pw2">
+        <a href="index.html" class="logo-wrap">
+            <div class="logo"><img src="images/logo2.png" alt=""></div>
+            <p class="name">赛门仕博印务</p>
+        </a>
+        <div class="clearfix">
+            <div class="f-cta">
+                <p><a href="#">四川省成都市天府大道中段1388号美年广场A座744-746号</a></p>
+                <p><a href="tel:13688124668" class="na">136 8812 4668（业务咨询）</a>&nbsp;/&nbsp;<a href="tel:15882064880" class="na">158 8206 4880（服务投诉）</a></p>
+            </div>
+            <div class="f-cop">
+                <p><a href="#">网站设计：赛门仕博</a></p>
+                <p>Copyright 2018 Symansbon Brand All Right Reserved</p>
+            </div>
+        </div>
+    </div>
+    <a href="javascript:;" id="top" class="back-top">
+        <div class="tb">
+            <div class="tbc">
+                <i class="btn btn-arrow btn-arrow-top"></i><i class="x">返回顶部</i>
+            </div>
+        </div>
+    </a>
+</div>
+
+
+<script src="js/plugin.js"></script>
+<script src="js/page.js"></script>
+<script src="http://api.map.baidu.com/api?v=2.0&ak=7d3a4c6e5e8a70dd200a2eeacf8c1b50"></script>
+<script>
+    function contactBox() {
+        if(!isMobile){
+            $('#map').css({height: w_height - $mtoph});
+        }else{
+            $('#map').css({height: 'auto'});
+        }
+    }
+    contactBox();
+    $(window).resize(function() {
+        contactBox();
+    });
+    $(function(){
+        function ShowMap(zuobiao, showmapInfo, zoom) {
+            var arrzuobiao = zuobiao.split(',');
+                var map = new BMap.Map("map");
+            var point = new BMap.Point(arrzuobiao[0], arrzuobiao[1]);
+            var marker = new BMap.Marker(point, {
+                icon: new BMap.Icon("images/mapi.png", new BMap.Size(76, 76))
+            })
+            map.addOverlay(marker);
+            marker.setAnimation(BMAP_ANIMATION_BOUNCE);
+            map.centerAndZoom(point, zoom);
+            map.disableScrollWheelZoom();
+            var opts = {
+                width: 400
+            }
+            var infoWindow = new BMap.InfoWindow(showmapInfo, opts);
+            marker.addEventListener("click", function () {
+                if (w_width>=641) {
+                    map.openInfoWindow(infoWindow,point);
+                }  
+            });
+        };
+        var k='<p style="font-size: 18px; color: #666;">地址：四川省绵阳市游仙区游仙东路89号</p><p style="font-size: 18px; color: #666;">邮编：621000</p>'; 
+        ShowMap('104.018887,30.723201', k, '17');
+    })
+</script>
+</body>
+</html>

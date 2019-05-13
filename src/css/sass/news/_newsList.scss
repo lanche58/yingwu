@@ -1,0 +1,100 @@
+.news-list{
+    margin-left: -40px;
+    li{
+        width: 50%;
+        float: left;
+        margin-bottom: 40px;
+    }
+    a{
+        display: block;
+        margin-left: 40px;
+        height: 205px;
+        padding: 30px;
+        border: 1px solid $bc1;
+        overflow: hidden;
+        @media screen and (min-width:1025px) {
+            &:hover{
+                .nowti{
+                    color: $mc3;
+                }
+                .btn-arrow{
+                    width: 80px;
+                    &:before{
+                        background: $mc1;
+                    }
+                    &:after{
+                        color: $mc1;
+                    }
+                }
+            }
+        }
+    }
+    .pic{
+        float: left;
+        width: 184px;
+        height: 143px;
+        margin-right: 35px;
+    }
+    .txts{
+        overflow: hidden; 
+    }
+    .date{
+        margin-bottom: 14px - 5px;
+        line-height: 1;
+    }
+    .nowti{
+        font-size: 20px;
+        font-weight: bold;
+        color: $fc1;
+        @include mt3;
+    }
+    .tx{
+        height: 24px * 2;
+        margin-top: 11px - 9px;
+    }
+    .more{
+        margin-top: 40px - 6px;
+        line-height: 0;
+    }
+    @media screen and (max-width:1366px) {
+        margin-left: -25px;
+        a{
+            margin-left: 25px;
+        }
+        .pic{
+            margin-right: 25px;
+        }
+    }
+    @media screen and (max-width:1024px) {
+        a{
+            padding-left: 20px;
+            padding-right: 20px;
+        }
+        .pic{
+            margin-right: 20px;
+        }
+    }
+    @media screen and (max-width:861px) {
+        .pic{
+            display: none;
+        }
+    }
+    @media screen and (max-width:601px) {
+        li{
+            width: 100%;
+            margin-bottom: (40 / 600) * 100vw;
+        }
+        .pic{
+            display: block;
+        }
+        a{
+            padding-left: 5%;
+            padding-right: 5%;
+        }
+    }
+    @media screen and (max-width:481px) {
+        .pic{
+            display: none;
+        }
+    }
+}

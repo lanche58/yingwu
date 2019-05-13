@@ -67,6 +67,18 @@
             font-size: 16px;
         }
     }
+    .fixbg{
+        overflow: hidden;
+    }
+    .ix-pro-list{
+        li{
+            transform: translateY(100%);
+            @include hide;
+            &:nth-child(2n){
+                transform: translateY(-100%);
+            }
+        }
+    }
     @media screen and (max-width:1366px) {
         .info-wrap{
             padding-top: 125px;
@@ -84,6 +96,15 @@
             .freeTx{
                 margin-top: (25 / 600) * 100vw;
             }
+        }
+    }
+}
+
+.active{
+    .ix-pro-list{
+        li, li:nth-child(2n) {
+            transform: none;
+            @include show;
         }
     }
 }

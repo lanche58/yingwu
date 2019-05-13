@@ -1,0 +1,82 @@
+@@include('./top.html')
+</head>
+<body>
+@@include('./header.html',{
+    "contact": "act"
+})
+<div class="container">
+    <p class="move-en tbc ff-3">SYMANSBON</p>
+    <div id="map"></div>
+    <div class="cta1 pw">
+        <h2 class="ix-ti tac"><span class="spe">联系我们</span></h2>
+        <ul class="contact-list">
+            <li>
+                <p class="name"><i class="icon iconfont icon-dizhi"></i>地址</p>
+                <div class="b">
+                    <p><a href="#">办公室：成都市天府五街美年广场A座746号</a></p>
+                    <p><a href="#">厂址：犀浦百草路555号</a></p>
+                </div>
+            </li>
+            <li>
+                <p class="name"><i class="icon iconfont icon-dianhua"></i>联系方式</p>
+                <div class="b">
+                    <p><a href="tel:18981839299" class="na">手机号：18981839299</a></p>
+                    <p><a href="tel:02885222114" class="na">座机号：028-85222114转808</a></p>
+                </div>
+            </li>
+            <li>
+                <p class="name"><i class="icon iconfont icon-QQ"></i>QQ</p>
+                <div class="b">
+                    <p><a href="#">2162971719</a></p>
+                    <p><a href="#">3258287530</a></p>
+                </div>
+            </li>
+        </ul>
+    </div>
+    <!-- cta1 -->
+</div>
+<!-- container -->
+@@include('./footer.html')
+<script src="js/plugin.js"></script>
+<script src="js/page.js"></script>
+<script src="http://api.map.baidu.com/api?v=2.0&ak=7d3a4c6e5e8a70dd200a2eeacf8c1b50"></script>
+<script>
+    function contactBox() {
+        if(!isMobile){
+            $('#map').css({height: w_height - $mtoph});
+        }else{
+            $('#map').css({height: 'auto'});
+        }
+    }
+    contactBox();
+    $(window).resize(function() {
+        contactBox();
+    });
+    $(function(){
+        function ShowMap(zuobiao, showmapInfo, zoom) {
+            var arrzuobiao = zuobiao.split(',');
+                var map = new BMap.Map("map");
+            var point = new BMap.Point(arrzuobiao[0], arrzuobiao[1]);
+            var marker = new BMap.Marker(point, {
+                icon: new BMap.Icon("images/mapi.png", new BMap.Size(76, 76))
+            })
+            map.addOverlay(marker);
+            marker.setAnimation(BMAP_ANIMATION_BOUNCE);
+            map.centerAndZoom(point, zoom);
+            map.disableScrollWheelZoom();
+            var opts = {
+                width: 400
+            }
+            var infoWindow = new BMap.InfoWindow(showmapInfo, opts);
+            marker.addEventListener("click", function () {
+                if (w_width>=641) {
+                    map.openInfoWindow(infoWindow,point);
+                }  
+            });
+        };
+        var k='<p style="font-size: 18px; color: #666;">地址：四川省绵阳市游仙区游仙东路89号</p><p style="font-size: 18px; color: #666;">邮编：621000</p>'; 
+        ShowMap('104.018887,30.723201', k, '17');
+    })
+</script>
+</body>
+</html>
