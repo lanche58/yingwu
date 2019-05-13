@@ -1,0 +1,60 @@
+.case-nav{
+    padding-right: 156px;
+    .item > a{
+        display: block;
+        margin-right: 16px;
+        height: 46px;
+        border: 1px solid $bc1;
+        text-align: center;
+        line-height: 46px - 2px;
+        color: $fc3;
+        font-size: 13px;
+        &.act{
+            background: $mc1;
+            border-color: $mc1;
+            color: $white;
+        }
+        @media screen and (min-width:1025px) {
+            &:hover{
+                background: $mc1;
+                border-color: $mc1;
+                color: $white;
+            }
+        }
+    }
+    .slick-arrow{
+        width: 78px;
+        height: 46px;
+        line-height: 46px;
+    }
+    .slick-prev{
+        right: 78px;
+    }
+    @media screen and (max-width:861px) {
+        .item > a{
+            margin-right: 8px;
+        }
+    }
+    @media screen and (max-width:641px) {
+        padding-right: 58px * 2;
+        .slick-arrow{
+            width: 58px;
+        }
+        .slick-prev{
+            right: 58px;
+        }
+    }
+    @media screen and (max-width:481px) {
+        padding-right: 38px * 2;
+        .slick-arrow{
+            width: 38px;
+            font-size: 18px;
+        }
+        .slick-prev{
+            right: 38px;
+        }
+        .item > a{
+            margin-right: 4px;
+        }
+    }
+}

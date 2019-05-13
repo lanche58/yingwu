@@ -1,0 +1,101 @@
+@@include('./top.html')
+</head>
+<body>
+@@include('./header.html',{
+    "news": "act"
+})
+<div class="container">
+    <div class="nw2">
+        <div class="nd-t tac">
+            <div class="nd-pw">
+                <h3 class="name">- 新闻中心</h3>
+                <h4 class="ti">赛门仕博品牌设计公司画册</h4>
+                <ul class="nd-mess fib">
+                    <li class="ib"><p class="date ff-2"><i class="icon iconfont icon-riqi"></i>2019-03-28</p></li>
+                    <li class="ib">
+                        <div class="share clearfix">
+                            <p>分享：</p>
+                            <div class="bdsharebuttonbox">
+                                <a href="javascript:;" data-cmd="tsina" class="icon iconfont icon-weibo"></a>
+                                <a href="javascript:;" data-cmd="weixin" class="icon iconfont icon-weixin"></a>
+                                <a href="javascript:;" data-cmd="sqq" class="icon iconfont icon-QQ"></a>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="nd-pw">
+            <div class="nd-b freeTx">
+                <ul class="case-base">
+                    <li>
+                        <p class="name">客户</p>
+                        <p class="text">赛门仕博品牌设计公司</p>
+                    </li>
+                    <li>
+                        <p class="name">制作周期</p>
+                        <p class="text">5天</p>
+                    </li>
+                    <li>
+                        <p class="name">制作数量</p>
+                        <p class="text">3千本</p>
+                    </li>
+                </ul>
+                <p style="font-size: 16px; text-indent: 30px;">为了满足不同客户日益细分与精准的要求，我们引进世界顶级德国海德堡新型电脑控制高速四色印刷机、专业屏幕软打样校色系统、全套电脑制版设备、瑞士玛天尼胶装机、海德堡折页机、锁线机等先进硬件设备，并成立了工艺研发团队和精品手工组，为高水准的产品和服务提供了保障。</p>
+                <p style="font-size: 16px; text-indent: 30px;">赛门仕愽主要业务有：广告印刷、广告设计、广告制作、品牌策划、广告工程，以高品质、巨实惠、超快捷、心服务为核心理念，为客户更好更高效的提供服务。</p>
+                <br>
+                <p><img src="img/nw_i5.jpg" alt=""></p>
+                <br>
+                <p><img src="img/nw_i6.jpg" alt=""></p>
+                <br>
+                <p style="font-size: 16px; text-indent: 30px;">为了满足不同客户日益细分与精准的要求，我们引进世界顶级德国海德堡新型电脑控制高速四色印刷机、专业屏幕软打样校色系统、全套电脑制版设备、瑞士玛天尼胶装机、海德堡折页机、锁线机等先进硬件设备，并成立了工艺研发团队和精品手工组，为高水准的产品和服务提供了保障。</p>
+                <p style="font-size: 16px; text-indent: 30px;">赛门仕愽主要业务有：广告印刷、广告设计、广告制作、品牌策划、广告工程，以高品质、巨实惠、超快捷、心服务为核心理念，为客户更好更高效的提供服务。</p>
+            </div>
+            <div class="nd-back">
+                <div class="back-prev back-arrow back-arrow-hover hide"><a href="#"><span class="icon"><i class="btn btn-arrow btn-arrow-left"></i></span><span class="x">上一篇</span></a></div>
+                <div class="back-next back-arrow back-arrow-hover hide"><a href="#"><span class="icon"><i class="btn btn-arrow btn-arrow-right"></i></span><span class="x">下一篇</span></a></div>
+                <div class="btn-more-hover back-list tac"><a href="news.html" class="btn btn-more btn-more-4">返回列表</a></div>
+            </div>
+        </div>
+    </div>
+    <!-- nw2 -->
+</div>
+<!-- container -->
+@@include('./footer.html')
+<script src="js/plugin.js"></script>
+<script src="js/page.js"></script>
+<script>
+    window._bd_share_config = {
+        common : {
+            bdText : '自定义分享内容', 
+            bdDesc : '自定义分享摘要', 
+            bdUrl : '自定义分享url地址',   
+            bdPic : '自定义分享图片'
+        },
+        share : [{}]
+    }
+    with(document)0[(getElementsByTagName('head')[0]||body).appendChild(createElement('script')).src='http://bdimg.share.baidu.com/static/api/js/share.js?cdnversion='+~(-new Date()/36e5)];
+    $(function(){
+        function backShow() {
+            if (w_width <= 1220) { 
+                $('.back-arrow').removeClass('hide');
+                return; 
+            }
+            var pos = $('.nd-b').offset().top - $mtoph;
+            var st = $(window).scrollTop();
+            var ft = $('.footer').offset().top - w_height * 0.7;
+            if (st > pos && st < ft) {
+                $('.back-arrow').removeClass('hide');
+            } else {
+                $('.back-arrow').addClass('hide');
+            }
+        }
+        backShow();
+        $(window).scroll(function() {
+            backShow();
+        });
+    })
+</script>  
+</script>
+</body>
+</html>
