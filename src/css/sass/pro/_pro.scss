@@ -1,0 +1,48 @@
+.pro-page .container{
+    position: relative;
+    z-index: 29;
+    margin-top: -(350 / 1920) * 100%;
+    min-height: 600px;
+    &:before{
+        @include ba;
+        top: 0;
+        bottom: 0;
+        right: 0;
+        width: 50%;
+        background: $hc3;
+    }
+    @media screen and (max-width:1024px) {
+        margin: 0;
+        background: $hc3;
+        min-height: 300px;
+        &:before{
+            display: none;
+        }
+    }
+}
+
+.pro1{
+    position: relative;
+    background: $hc3;
+    padding: 85px 0 100px;
+    min-height: 600px;
+    &:before{
+        @include ba;
+        top: 0;
+        bottom: 0;
+        right: 100%;
+        width: (100 / 1200) * 100%;
+        background: $hc3;
+    }
+    @media screen and (max-width:1024px) {
+        min-height: 0;
+        background: none;
+        padding-bottom: 50px;
+        &:before{
+            display: none;
+        }
+    }
+    @media screen and (max-width:601px) {
+        padding: (85 / 600) * 100vw 0 (50 / 600) * 100vw;
+    }
+}

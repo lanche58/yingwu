@@ -1564,3 +1564,101 @@ a.pswp__share--download:hover{background:#ddd}
 @media screen and (max-width:601px){
 .nd-b .case-base{margin-bottom:8.33333%}
 }
+.pro-banner{padding-right:13.75%}
+.pro-banner .txts{top:auto;margin-bottom:18.22917%;padding-bottom:100px}
+.pro-banner .en{top:auto;bottom:100px;margin:0 0 18.22917% 0}
+.pro-banner .link{position:absolute;right:0;bottom:0;padding:0 13.75% 18.22917% 0}
+.pro-banner .btn-more{width:340px;height:80px;line-height:78px}
+.pro-banner .btn-more .btn-arrow{margin-bottom:35px}
+@media screen and (max-width:1024px){
+.pro-banner{padding-right:0}
+.pro-banner .txts{margin-bottom:0;padding-bottom:0;bottom:50%;-webkit-transform:translateY(50%);-moz-transform:translateY(50%);-ms-transform:translateY(50%);transform:translateY(50%)}
+.pro-banner .en{margin:0;bottom:auto;top:50%;margin-top:-84px}
+.pro-banner .link{padding:0 5% 5% 0}
+.pro-banner .btn-more{width:250px;height:54px;line-height:52px}
+.pro-banner .btn-more .btn-arrow{margin-bottom:22px}
+}
+@media screen and (max-width:861px){
+.pro-banner .en{margin-top:-64px}
+}
+@media screen and (max-width:641px){
+.pro-banner .btn-more{width:auto;height:auto;border:none;line-height:20px}
+.pro-banner .btn-more .btn-arrow{margin-bottom:6px}
+}
+@media screen and (max-width:601px){
+.pro-banner .en{margin-top:-50px}
+.pro-banner .btn-more{font-size:14px}
+.pro-banner .btn-more .btn-arrow{width:40px;height:6px;margin:0 0 7px 15px}
+.pro-banner .btn-more .btn-arrow:after{border-left-width:6px;border-right-width:6px;border-bottom-width:6px}
+}
+@media screen and (max-width:481px){
+.pro-banner .en{margin-top:-40px}
+.pro-banner .btn-more{font-size:12px}
+.pro-banner .btn-more .btn-arrow{width:24px;height:4px;margin:0 0 8px 10px}
+.pro-banner .btn-more .btn-arrow:after{border-left-width:4px;border-right-width:4px;border-bottom-width:4px}
+}
+.pro-page .container{position:relative;z-index:29;margin-top:-18.22917%;min-height:600px}
+.pro-page .container:before{content:"";position:absolute;top:0;bottom:0;right:0;width:50%;background:#f2f2f2}
+@media screen and (max-width:1024px){
+.pro-page .container{margin:0;background:#f2f2f2;min-height:300px}
+.pro-page .container:before{display:none}
+}
+.pro1{position:relative;background:#f2f2f2;padding:85px 0 100px;min-height:600px}
+.pro1:before{content:"";position:absolute;top:0;bottom:0;right:100%;width:8.33333%;background:#f2f2f2}
+@media screen and (max-width:1024px){
+.pro1{min-height:0;background:0 0;padding-bottom:50px}
+.pro1:before{display:none}
+}
+@media screen and (max-width:601px){
+.pro1{padding:14.16667vw 0 8.33333vw}
+}
+.pro-list{margin-left:-30px}
+.pro-list li{width:33.33%;float:left;margin-bottom:50px}
+.pro-list a{display:block;margin-left:30px;background:#fff;box-shadow:0 3px 6px rgba(0,0,0,.16)}
+@media screen and (min-width:1025px){
+.pro-list a:hover .nowti{color:#2b78dc}
+.pro-list a:hover .btn-more{color:#2b78dc}
+.pro-list a:hover .btn-more .btn-arrow{width:60px}
+.pro-list a:hover .btn-more .btn-arrow:before{background:#2b78dc}
+.pro-list a:hover .btn-more .btn-arrow:after{color:#2b78dc}
+}
+.pro-list .pai{padding-bottom:63.15789%}
+.pro-list .txts{height:168px;padding:20px 30px 0 25px;overflow:hidden}
+.pro-list .nowti{font-size:20px;font-weight:700;color:#333}
+.pro-list .tx{line-height:20px!important;height:40px;margin-top:8px}
+.pro-list .more{line-height:0;margin-top:30px}
+.pro-list .btn-more{width:auto;height:auto;border:none;color:#ccc;font-size:12px;line-height:16px}
+.pro-list .btn-more .btn-arrow{margin:0 0 6px 12px;width:32px;height:4px}
+.pro-list .btn-more .btn-arrow:before{background:#ccc}
+.pro-list .btn-more .btn-arrow:after{border-left-width:4px;border-right-width:4px;border-bottom-width:4px;color:#ccc}
+@media screen and (max-width:1024px){
+.pro-list li{width:50%}
+}
+@media screen and (max-width:601px){
+.pro-list li{margin-bottom:8.33333vw}
+}
+@media screen and (max-width:481px){
+.pro-list li{width:100%}
+}
+.pager a{width:54px;height:54px;margin:0 4px;border:1px solid #e5e5e5;line-height:52px;color:#999;font-size:16px}
+.pager a.act{background:#2b78dc;border-color:#2b78dc;color:#fff}
+@media screen and (min-width:1025px){
+.pager a:hover{background:#2b78dc;border-color:#2b78dc;color:#fff}
+}
+.pager .arrow{width:120px;margin:0 17px;color:#2b78dc}
+@media screen and (max-width:861px){
+.pager a{width:44px;height:44px;line-height:42px;font-size:14px}
+.pager .arrow{width:80px}
+}
+@media screen and (max-width:601px){
+.pager a{width:44px;height:44px;line-height:42px;font-size:14px}
+.pager .arrow{width:70px;margin:0 4px}
+}
+@media screen and (max-width:481px){
+.pager a{width:34px;margin:0 1px;font-size:12px}
+.pager .arrow{width:54px;margin:0 1px}
+}
+@media screen and (max-width:351px){
+.pager a{width:30px}
+.pager .arrow{width:50px}
+}

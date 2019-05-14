@@ -7,22 +7,24 @@
 <div class="container">
     <div class="nw2">
         <div class="nd-t fixbg tac" style="background-image: url(img/casefixbg.jpg);">
-            <div class="nd-pw">
-                <h3 class="name">- 画册设计</h3>
-                <h4 class="ti">赛门仕博品牌设计公司画册</h4>
-                <ul class="nd-mess fib">
-                    <!-- <li class="ib"><p class="date ff-2"><i class="icon iconfont icon-riqi"></i>2019-03-28</p></li> -->
-                    <li class="ib">
-                        <div class="share clearfix">
-                            <p>分享：</p>
-                            <div class="bdsharebuttonbox">
-                                <a href="javascript:;" data-cmd="tsina" class="icon iconfont icon-weibo"></a>
-                                <a href="javascript:;" data-cmd="weixin" class="icon iconfont icon-weixin"></a>
-                                <a href="javascript:;" data-cmd="sqq" class="icon iconfont icon-QQ"></a>
+            <div class="tb">
+                <div class="tbc">
+                    <h3 class="name">- 画册设计</h3>
+                    <h4 class="ti">赛门仕博品牌设计公司画册</h4>
+                    <ul class="nd-mess fib">
+                        <!-- <li class="ib"><p class="date ff-2"><i class="icon iconfont icon-riqi"></i>2019-03-28</p></li> -->
+                        <li class="ib">
+                            <div class="share clearfix">
+                                <p>分享：</p>
+                                <div class="bdsharebuttonbox">
+                                    <a href="javascript:;" data-cmd="tsina" class="icon iconfont icon-weibo"></a>
+                                    <a href="javascript:;" data-cmd="weixin" class="icon iconfont icon-weixin"></a>
+                                    <a href="javascript:;" data-cmd="sqq" class="icon iconfont icon-QQ"></a>
+                                </div>
                             </div>
-                        </div>
-                    </li>
-                </ul>
+                        </li>
+                    </ul>
+                </div>
             </div>
         </div>
         <div class="nd-pw">
@@ -75,6 +77,17 @@
         share : [{}]
     }
     with(document)0[(getElementsByTagName('head')[0]||body).appendChild(createElement('script')).src='http://bdimg.share.baidu.com/static/api/js/share.js?cdnversion='+~(-new Date()/36e5)];
+    function caseBox() {
+        if(!isMobile){
+            $('.nd-t').css({height: w_height - $mtoph});
+        }else{
+            $('.nd-t').css({height: 'auto'});
+        }
+    }
+    caseBox();
+    $(window).resize(function() {
+        caseBox();
+    });
     $(function(){
         function backShow() {
             if (w_width <= 1220) { 

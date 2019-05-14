@@ -1,0 +1,92 @@
+.pro-list{
+    margin-left: -30px;
+    li{
+        width: 33.33%;
+        float: left;
+        margin-bottom: 50px;
+    }
+    a{
+        display: block;
+        margin-left: 30px;
+        background: $white;
+        box-shadow:0px 3px 6px rgba(0,0,0,0.16);
+        @media screen and (min-width:1025px) {
+            &:hover{
+                .nowti{
+                    color: $mc3;
+                }
+                .btn-more{
+                    color: $mc3;
+                    .btn-arrow{
+                        width: 60px;
+                        &:before{
+                            background: $mc3;
+                        }
+                        &:after{
+                            color: $mc3;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .pai{
+        padding-bottom: (240 / 380) * 100%;
+    }
+    .txts{
+        height: 168px;
+        padding: 20px 30px 0 25px;
+        overflow: hidden;
+    }
+    .nowti{
+        font-size: 20px;
+        font-weight: bold;
+        color: $fc1;
+    }
+    .tx{
+        line-height: 20px !important;
+        height: 20px * 2;
+        margin-top: 8px;
+    }
+    .more{
+        line-height: 0;
+        margin-top: 30px;
+    }
+    .btn-more{
+        width: auto;
+        height: auto;
+        border: none;
+        color: $hc1;
+        font-size: 12px;
+        line-height: 16px;
+        .btn-arrow{
+            margin: 0 0 (16px - 4px) / 2 12px;
+            width: 32px;
+            height: 4px;
+            &:before{
+                background: $hc1;
+            }
+            &:after{
+                border-left-width: 4px;
+                border-right-width: 4px;
+                border-bottom-width: 4px;
+                color: $hc1;
+            }
+        }
+    }
+    @media screen and (max-width:1024px) {
+        li{
+            width: 50%;
+        }
+    }
+    @media screen and (max-width:601px) {
+        li{
+            margin-bottom: (50 / 600) * 100vw;
+        }
+    }
+    @media screen and (max-width:481px) {
+        li{
+            width: 100%;
+        }
+    }
+}

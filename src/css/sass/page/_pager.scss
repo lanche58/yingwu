@@ -1,0 +1,70 @@
+.pager{
+    a{
+        width: 54px;
+        height: 54px;
+        margin: 0 4px;
+        border: 1px solid $bc1;
+        line-height: 52px;
+        color: $fc3;
+        font-size: 16px;
+        &.act{
+            background: $mc3;
+            border-color: $mc3;
+            color: $white;
+        }
+        @media screen and (min-width:1025px) {
+            &:hover{
+                background: $mc3;
+                border-color: $mc3;
+                color: $white;
+            }
+        }
+    }
+    .arrow{
+        width: 120px;
+        margin: 0 17px;
+        color: $mc3;
+    }
+    @media screen and (max-width:861px) {
+        a{
+            width: 44px;
+            height: 44px;
+            line-height: 42px;
+            font-size: 14px;
+        }
+        .arrow{
+            width: 80px;
+        }
+    }
+    @media screen and (max-width:601px) {
+        a{
+            width: 44px;
+            height: 44px;
+            line-height: 42px;
+            font-size: 14px;
+        }
+        .arrow{
+            width: 70px;
+            margin: 0 4px;
+        }
+    }
+    @media screen and (max-width:481px) {
+        a{
+            width: 34px;
+            margin: 0 1px;
+            font-size: 12px;
+        }
+        .arrow{
+            width: 54px;
+            margin: 0 1px;
+        }
+    }
+    @media screen and (max-width:351px) {
+        a{
+            width: 30px;
+        }
+        .arrow{
+            width: 50px;
+        }
+    }
+}
