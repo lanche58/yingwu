@@ -1,12 +1,31 @@
+.ipimgs-list{
+    .pai{
+        padding-bottom: (700 / 1920) * 100%;
+    }
+    @media screen and (max-width:1024px) {
+        display: none;
+    }
+}
+
+.ip-wrap{
+    position: relative;
+    @media screen and (max-width:1024px) {
+        padding: 0 5%;
+    }
+}
+
 .ix-pro-list{
+    position: absolute;
+    @include tblr;
     li{
         width: 25%;
+        height: 100%;
         float: left;
     }
     a{
         display: block;
-        padding: (700px - 68px) / 2 5% 0;
-        height: 700px;
+        padding: (316 / 480) * 100% 5% 0;
+        height: 100%;
         @include b5;
         background: $black-8;
         text-align: center;
@@ -15,7 +34,7 @@
         @media screen and (min-width:1025px) {
             &:hover{
                 background: $black-6;
-                padding-top: (500px - 236px) / 2;
+                padding-top: 38%;
                 .line, .nowti, .more{
                     @include show;
                 }
@@ -23,7 +42,7 @@
         }
         @media screen and (min-width:1367px) {
             &:hover{
-                padding-top: (700px - 236px) / 2;
+                padding-top: (232 / 480) * 100%;
             }
         }
     }
@@ -49,25 +68,35 @@
     }
     @media screen and (max-width:1366px) {
         a{
-            height: 500px;
-            padding-top: (500px - 68px) / 2;
+            padding-top: 62%;
         }
     }
     @media screen and (max-width:1024px) {
+        position: static;
+        margin-left: -30px;
         a{
-            padding-top: (360px - 236px) / 2;
+            padding-top: (360px - 238px) / 2;
+            margin-left: 30px;
+            background: none;
+            border: 1px solid $bc1;
             height: 360px;
+            color: $fc2;
+            box-shadow: 0 3px 6px rgba(0,0,0,.16);
         }
         .line, .nowti, .more{
             @include show;
         }
         li{
             width: 50%;
-            border-bottom: 1px solid $white-5;
-            border-right: 1px solid $white-5;
-            &:nth-child(2n){
-                border-right: none;
-            }
+            margin-top: 30px;
+        }
+        .btn-more{
+            background: $mc1;
+            border-color: $mc1;
+            color: $white;
+        }
+        .line{
+            background: $bc1;
         }
     }
     @media screen and (max-width:861px) {
@@ -88,10 +117,11 @@
             height: 300px;
         }
     }
-    @media screen and (max-width:481px) {
+    @media screen and (max-width:601px) {
         li{
             width: 100%;
             border-right: none;
+            margin-top: 5vw;
         }
         a{
             height: auto;

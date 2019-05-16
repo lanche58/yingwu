@@ -30,7 +30,13 @@
             <h3 class="ix-ti tac trans transY">您可以想到的，<span class="spe">我们都可以做到</span></h3>
             <div class="freeTx tac trans transY dly-1">我们专注于画册，手提袋，名片，信封，便签，联单，纸杯，笔记本，台历挂历，工作证，pvc卡，ID卡，芯片卡，文化墙，海报，背胶，KT板，喷绘，pvc，X展架，易拉宝等服务。</div>
         </div>
-        <div class="fixbg scroll-animation" style="background-image: url(img/ixfixbg.jpg);">
+        <div class="ip-wrap scroll-animation">
+            <div class="ipimgs-list u-slick">
+                <div class="item"><div class="pai"><img src="img/ip_i3.jpg" alt=""></div></div>
+                <div class="item"><div class="pai"><img src="img/ip_i1.jpg" alt=""></div></div>
+                <div class="item"><div class="pai"><img src="img/ip_i2.jpg" alt=""></div></div>
+                <div class="item"><div class="pai"><img src="img/ip_i4.jpg" alt=""></div></div>
+            </div>
             <ul class="ix-pro-list clearfix">
                 <li class="trans"><a href="case.html">
                     <div class="ip-ti">
@@ -203,6 +209,16 @@
             var bannerCurr = nextSlide + 1;
             bannerCurr = bannerCurr < 10 ? '0' + bannerCurr : bannerCurr;
             $('.banner-count .cnum').html(bannerCurr);
+        });
+        $('.ipimgs-list').slick({
+            arrows: false,
+            dots: false,
+            speed: 0,
+            fade: true
+        });
+        $('.ix-pro-list a').mouseenter(function(){
+            if (isMobile) { return; }
+            $('.ipimgs-list').slick('slickGoTo', $(this).parent().index());
         });
         function getCaseAjax(addr, obj) {
             $.ajax({

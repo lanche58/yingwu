@@ -89,10 +89,15 @@
             }
         }
     }
+    @media screen and (max-width:1024px) {
+        .info-wrap{
+            padding-bottom: 115px - 30px;
+        }
+    }
     @media screen and (max-width:601px) {
         .info-wrap{
             padding-top: (125 / 600) * 100vw;
-            padding-bottom: (115 / 600) * 100vw;
+            padding-bottom: (85 / 600) * 100vw;
             .freeTx{
                 margin-top: (25 / 600) * 100vw;
             }
